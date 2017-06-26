@@ -10,7 +10,11 @@
   outline: 0;
   -webkit-font-smoothing: antialiased;
   -webkit-box-sizing: border-box;
+  -webkit-text-size-adjust: auto;
   -moz-box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+	-moz-font-feature-settings: "liga", "kern";
+	text-rendering: optimizelegibility;
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box; }
@@ -27,13 +31,13 @@
 \*------------------------------------*/
 
 	::selection {
-		background: #333;
+		background: #999;
 		color: #fff;
 		text-shadow: none; /* Safari */
 	}
 
 	::-moz-selection {
-		background: #333;
+		background: #999;
 		color: #fff;
 		text-shadow: none; /* Firefox */
 	}
@@ -44,11 +48,10 @@
 \*------------------------------------*/
 
 body {
-  font: 300 16px/26px 'Source Sans Pro', sans-serif;
-  color: #efefef; /* Font Color Color Here */
+  font: normal 18px/32px 'Arial', sans-serif;
+  letter-spacing: 1px;
+  color: #fff;
   background: #000 url('../img/Poster-Background-Tile.png') repeat;
-
-
 
 }
 
@@ -71,6 +74,10 @@ a:hover, a:visited:hover {
     color: #fff; }
 
 a.button {
+  font-family: 'Oswald', 'Arial', sans-serif;
+  //font-weight: 200;
+  text-transform: uppercase;
+  font-size: 16px;
   display: block;
   width: 300px;
   height: 50px;
@@ -78,8 +85,7 @@ a.button {
   margin-left: auto;
   margin-right: auto;
   color: #000;
-  font-weight: 600;
-  letter-spacing: .1em;
+  letter-spacing: 5px;
   background-color: #EABA09;
   border-radius: 4px;
 }
@@ -97,23 +103,29 @@ img.avatar {
 }
 
 h1 {
-  font-weight: 700;
+  font-family: 'Oswald', 'Arial', sans-serif;
+  font-weight: 200;
   text-transform: uppercase;
-  color: #e5e5e5;
-  font-size: 2.75em;
-  letter-spacing: 0.75rem;
-  line-height: 1.1;
-  margin-bottom: 0.3rem;
+  color: #fff;
+  font-size: 72px;
+  letter-spacing: 10px;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+
+h5 {
+  font-family: 'Oswald', 'Arial', sans-serif;
+  font-weight: 200;
+  letter-spacing: 20px;
+  opacity: .85;
+  line-height: 1;
+  margin: 1em;
 }
 
 #intro {
-  font-size: 1.4em;
-  line-height: 1;
-  letter-spacing: .1rem;
 	text-align: center;
 	margin-bottom: 2.5em;
   display: block;
-  opacity: .50;
 }
 
 /*------------------------------------*\
@@ -121,9 +133,9 @@ h1 {
 \*------------------------------------*/
 
 #contain #content {
-  width: 620px;
+  width: 720px;
   padding: 20px;
-  //margin-bottom: 10em;
+  margin-top: 2%;
 }
 
 #contain #content * {
